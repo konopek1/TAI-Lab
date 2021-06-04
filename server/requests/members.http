@@ -1,0 +1,27 @@
+POST http://localhost:3000/member HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "member1",
+    "group": {"id": 2}
+}
+
+###
+
+PATCH http://localhost:3000/member/10 HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "member2",
+    "group": {"id": 2}
+}
+
+
+###
+
+GET http://localhost:3000/member HTTP/1.1
+
+
+###
+
+GET http://localhost:3000/member/10 HTTP/1.1
